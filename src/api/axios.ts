@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:5004/api';
+const baseURL = import.meta.env.VITE_BASE_URL;
+
+if (!baseURL) {
+  throw new Error('La variable de entorno VITE_BASE_URL no está definida');
+}
 
 const axiosInstance = axios.create({
   baseURL,

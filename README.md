@@ -7,6 +7,20 @@ Este es un proyecto de frontend para un sistema de login desarrollado con React,
 - Node.js (versión 18 o superior)
 - npm o yarn
 
+## Variables de Entorno
+
+El proyecto requiere las siguientes variables de entorno:
+
+1. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+```bash
+VITE_BASE_URL=http://localhost:5004/api
+```
+
+2. Para desarrollo local, puedes copiar el archivo `.env.example` y renombrarlo a `.env`:
+```bash
+cp .env.example .env
+```
+
 ## Instalación
 
 1. Clona el repositorio:
