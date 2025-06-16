@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# Frontend Login
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de frontend para un sistema de login desarrollado con React, TypeScript y Vite.
 
-Currently, two official plugins are available:
+## Requisitos Previos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (versión 18 o superior)
+- npm o yarn
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clona el repositorio:
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd frontendLogin
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Instala las dependencias:
+```bash
+pnpm install
+# o
+yarn install
 ```
+
+## Desarrollo
+
+Para iniciar el servidor de desarrollo:
+
+```bash
+pnpm run dev
+# o
+yarn dev
+```
+
+La aplicación estará disponible en `http://localhost:5173`
+
+## Construcción
+
+Para construir el proyecto para producción:
+
+```bash
+pnpm run build
+# o
+yarn build
+```
+
+Los archivos de construcción se generarán en la carpeta `dist`.
+
+## Tecnologías Utilizadas
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+
+## Estructura del Proyecto
+
+```
+frontendLogin/
+├── src/
+│   ├── components/     # Componentes reutilizables
+│   ├── pages/         # Páginas de la aplicación
+│   ├── hooks/         # Custom hooks
+│   ├── context/       # Contextos de React
+│   ├── types/         # Definiciones de tipos TypeScript
+│   └── utils/         # Utilidades y funciones auxiliares
+├── public/            # Archivos estáticos
+└── ...
+```
+
+## Scripts Disponibles
+
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye la aplicación para producción
+- `npm run preview` - Vista previa de la versión de producción
+- `npm run lint` - Ejecuta el linter
+- `npm run type-check` - Verifica los tipos de TypeScript
+
+
+
+
