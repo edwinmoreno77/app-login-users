@@ -41,8 +41,9 @@ export const AuthSidePanel = ({
         <img
           src={imageUrl}
           alt="Auth background"
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-125 z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0 animate-scale-pulse"
         />
+
         <div className="relative z-30 flex items-center justify-center w-full h-full p-12">
           <div className="max-w-md text-center">
             <motion.div

@@ -2,8 +2,8 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import { LoginForm } from "../components/auth/LoginForm";
 import { RegisterForm } from "../components/auth/RegisterForm";
 import { Users } from "../pages/Users";
-import { ProtectedRoute } from "../components/auth/ProtectedRoute";
 import { PublicRoute } from "./PublicRoute";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 // public routes
 const publicRoutes = [
