@@ -13,7 +13,7 @@ El proyecto requiere las siguientes variables de entorno:
 
 1. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 ```bash
-VITE_BASE_URL=http://localhost:5004/api
+VITE_BASE_URL=http://localhost:5004/
 ```
 
 2. Para desarrollo local, puedes copiar el archivo `.env.example` y renombrarlo a `.env`:
